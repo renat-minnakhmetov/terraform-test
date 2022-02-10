@@ -1,7 +1,3 @@
-provider "aws" {
-  region = "us-east-1"
-}
-
 resource "aws_iam_role" "test_role" {
   name = "minnakhmetovr_test_role"
 
@@ -22,7 +18,7 @@ resource "aws_iam_role" "test_role" {
   tags = {
     tag-key = "tag-value"
   }
-  
+
   inline_policy {
     name = "my_inline_policy"
 
