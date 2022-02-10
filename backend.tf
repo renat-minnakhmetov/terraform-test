@@ -1,10 +1,10 @@
 terraform {
-#   cloud {
-#     organization = "<ORG_NAME>"
-#     workspaces {
-#       name = "Example-Workspace"
-#     }
-#   }
+  cloud {
+    organization = "minnakhmetovr-terraform-cloud"
+    workspaces {
+      name = "terraform-test"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"

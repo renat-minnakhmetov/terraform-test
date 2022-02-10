@@ -27,7 +27,7 @@ resource "aws_iam_role" "test_role" {
       Statement = [
         {
           Action   = ["ec2:Describe*"]
-          Effect   = "Allow"
+          Effect   = "Deny"
           Resource = "*"
         },
       ]
